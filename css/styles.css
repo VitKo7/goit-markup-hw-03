@@ -100,28 +100,6 @@ img {
   margin-right: 93px;
 }
 
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.header-contact-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header-contact-item .mail {
-  margin-right: 50px;
-}
-
-
 .logo-Web {
   color: var(--accent-color);
 }
@@ -174,21 +152,51 @@ img {
   letter-spacing: 0.02em;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header-contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-contact-item .mail {
+  margin-right: 50px;
+}
+
 /* ! ========================= Hero ========================= */
+
+.hero {
+  background-color: var(--hero-footer-background);
+  text-align: center;
+}
+
+.hero .container {
+  padding: 200px 0;
+}
 
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--hero-footer-background);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
+  margin: 0 auto;
 }
 
-.hero > .button {
+.hero .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -200,9 +208,18 @@ img {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  padding: 10px 32px;
+  margin-top: 30px;
 }
 
 /* ! ========================= Features ========================= */
+
+.section .features {
+  display: flex;
+  align-items: center;
+  padding: 94px 0;
+}
 
 .section .title {
   font-weight: 700;
@@ -210,6 +227,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  /* width: 270px; */
+  margin-bottom: 10px;
 }
 
 .features .text {
@@ -217,9 +237,29 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  
+  /* width: 270px; */
 }
 
-/* ! ========================= SERVICES & TEAM ========================= */
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ! ========================= SERVICES ========================= */
+
+.services .container {
+  padding: 94px 0;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .section-title {
   font-weight: 700;
@@ -227,6 +267,34 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* ! ========================= TEAM ========================= */
+
+.section-team {
+  background: #F5F4FA;
+}
+
+.section-team .container {
+  padding: 94px 0;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-member-item > img {
+  margin-bottom: 30px;
+}
+
+.team-member-item {
+  background: #FFFFFF;
+/* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .member-name {
@@ -235,6 +303,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .member-position {
@@ -243,6 +312,7 @@ img {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .section-team {
@@ -252,7 +322,11 @@ img {
 /* ! ========================= Footer ========================= */
 
 .footer {
+  padding: 60px 0;
   color: var(--primary-white-color);
+}
+
+footer {
   background-color: var(--hero-footer-background);
 }
 
@@ -273,6 +347,14 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* ! ========================= Work Samples Filter ========================= */
