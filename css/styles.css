@@ -25,8 +25,6 @@ footer background: #2F303A; */
   --team-background: #f5f4fa;
 }
 
-
-
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -75,10 +73,10 @@ img {
   margin: 0 auto;
 }
 
-.container * {
-  outline: 1px solid red
-}
-
+/* .container * {
+  outline: 1px solid red;
+  background-color: skyblue;
+} */
 
 /* ! ========================= Logo ========================= */
 
@@ -237,7 +235,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  
+
   /* width: 270px; */
 }
 
@@ -273,7 +271,7 @@ img {
 /* ! ========================= TEAM ========================= */
 
 .section-team {
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 
 .section-team .container {
@@ -291,9 +289,10 @@ img {
 }
 
 .team-member-item {
-  background: #FFFFFF;
-/* material shadow v1 */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -359,6 +358,53 @@ footer {
 
 /* ! ========================= Work Samples Filter ========================= */
 
+.work-samples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-samples {
+  margin-top: 34px;
+}
+
+.work-samples-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.sample-name {
+  margin: 20px 24px 4px;
+}
+
+.sample-type {
+  margin: 0 24px 20px;
+}
+
+.work-samples-item:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.samples {
+  margin: 94px 0;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  width: 612px;
+  margin: 0 auto;
+}
+
+.filter-list-item {
+  padding: 6px 22px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .radio-button {
   color: var(--title-text-color);
 
@@ -388,6 +434,3 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-
-\204e
-\2042
