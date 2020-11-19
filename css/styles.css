@@ -25,6 +25,8 @@ footer background: #2F303A; */
   --team-background: #f5f4fa;
 }
 
+
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -50,7 +52,75 @@ h6 {
   color: var(--title-text-color);
 }
 
-/* ! Logo */
+/* ! ========================= ADDED ========================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container * {
+  outline: 1px solid red
+}
+
+
+/* ! ========================= Logo ========================= */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo.link {
+  width: 145px;
+  height: 31px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header-contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-contact-item .mail {
+  margin-right: 50px;
+}
+
 
 .logo-Web {
   color: var(--accent-color);
@@ -69,7 +139,7 @@ h6 {
   letter-spacing: 0.03em;
 }
 
-/* ! Site Nav */
+/* ! ========================= Site Nav ========================= */
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -104,7 +174,7 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-/* ! Hero */
+/* ! ========================= Hero ========================= */
 
 .hero-title {
   color: var(--primary-white-color);
@@ -132,7 +202,7 @@ h6 {
   border-radius: 4px;
 }
 
-/* ! Features */
+/* ! ========================= Features ========================= */
 
 .section .title {
   font-weight: 700;
@@ -149,7 +219,7 @@ h6 {
   letter-spacing: 0.03em;
 }
 
-/* ! SERVICES & TEAM */
+/* ! ========================= SERVICES & TEAM ========================= */
 
 .section-title {
   font-weight: 700;
@@ -179,7 +249,7 @@ h6 {
   background-color: var(--team-background);
 }
 
-/* ! Footer */
+/* ! ========================= Footer ========================= */
 
 .footer {
   color: var(--primary-white-color);
@@ -205,7 +275,7 @@ h6 {
   letter-spacing: 0.03em;
 }
 
-/* ! Work Samples Filter */
+/* ! ========================= Work Samples Filter ========================= */
 
 .radio-button {
   color: var(--title-text-color);
