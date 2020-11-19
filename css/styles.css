@@ -1,0 +1,241 @@
+/* цвет основного текста #212121;
+дополн.цвет текста #757575;
+цвет акцент #2196F3;
+при наведении #FFFFFF; */
+
+/* nav background: #ffffff;
+hero background: #2F303A;
+advant background: #e5e5e5;
+services background: #e5e5e5;
+team background: #f5f4fa;
+footer background: #2F303A; */
+
+/*  logo-font: Raleway 700;
+    main-title-font: Roboto 700, 900;
+    main-paragraph-font: Roboto 400, 500;
+*/
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --hero-title: #000000;
+  --primary-white-color: #ffffff;
+  --hero-footer-background: #2f303a;
+  --team-background: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
+
+/* ! Logo */
+
+.logo-Web {
+  color: var(--accent-color);
+}
+
+.logo-Studio {
+  color: var(--hero-title);
+}
+
+.logo-Web,
+.logo-Studio {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+/* ! Site Nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* .list .mail {
+  color: var(--accent-color);
+} */
+
+.list .mail:hover,
+.list .mail:focus,
+.list .tel:hover,
+.list .tel:focus {
+  color: var(--accent-color);
+}
+
+.list .link,
+.list .mail,
+.list .tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* ! Hero */
+
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: var(--hero-footer-background);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero > .button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* ! Features */
+
+.section .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ! SERVICES & TEAM */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-team {
+  background-color: var(--team-background);
+}
+
+/* ! Footer */
+
+.footer {
+  color: var(--primary-white-color);
+  background-color: var(--hero-footer-background);
+}
+
+.footer .logo-Studio {
+  color: var(--primary-white-color);
+}
+
+.footer .mail,
+.footer .tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .address,
+.footer .mail,
+.footer .tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ! Work Samples Filter */
+
+.radio-button {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.radio-button:hover,
+.radio-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.sample-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.sample-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+\204e
+\2042
